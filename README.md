@@ -1,8 +1,9 @@
 # Azure-based-Demand-Forecasting-and-Capacity-Optimization-System
 
+
 ## Description
 
-The Azure-based Demand Forecasting and Capacity Optimization System is a robust, cloud-native solution engineered to transform operational efficiency through data-driven insights. By leveraging Microsoft Azure's advanced machine learning capabilities and scalable data infrastructure, this system delivers high-precision demand forecasts that allow businesses to anticipate market trends with confidence. It integrates seamless capacity optimization logic to align resources—such as inventory, workforce, and infrastructure—perfectly with projected needs, minimizing waste and maximizing ROI. Designed for scalability and reliability, this system provides a strategic framework for organizations to move from reactive planning to proactive, intelligent resource management.
+The Azure-based Demand Forecasting and Capacity Optimization System is a sophisticated, cloud-native solution designed to transform how organizations manage their resources and anticipate market needs. By leveraging the robust computational power of Microsoft Azure, this system provides high-precision demand predictions that allow businesses to proactively align their capacity with real-time requirements. This end-to-end framework bridges the gap between data-driven insights and operational execution, helping enterprises minimize overhead, eliminate resource bottlenecks, and maximize overall efficiency through intelligent, automated scaling strategies.
 
 ## Project Structure
 
@@ -10,28 +11,25 @@ The Azure-based Demand Forecasting and Capacity Optimization System is a robust,
 .
 ├── DemandForecasting&CapacityOptimizationSystem.ipynb
 ├── LICENSE
+├── Milstone-2.ipynb
 ├── azure_demand_cleaned.csv
+├── azure_demand_feature_engineered.csv
 └── azure_demand_raw.csv
 ```
 
-## Dataset Scale & Coverage
+## Contributing
 
-* Time span: 15 months
-* Records: 5,700 rows (raw), 5,500 rows after cleaning
-* Regions: US-East, US-West, India-South, Europe-North
-* Granularity: Timestamp-level (includes HH:MM:SS)
+Contributions are welcome! Here's how you can help:
 
-This scale is optimized to capture seasonality, demand trends, and enterprise usage variability while remaining computationally efficient for forecasting models.
+1. **Fork** the repository
+2. **Clone** your fork: `git clone https://github.com/Supraja-Potluri/Azure-based-Demand-Forecasting-and-Capacity-Optimization-System.git`
+3. **Create** a new branch: `git checkout -b feature/your-feature`
+4. **Commit** your changes: `git commit -am 'Add some feature'`
+5. **Push** to your branch: `git push origin feature/your-feature`
+6. **Open** a pull request
 
-## Dataset Columns & Purpose
+Please ensure your code follows the project's style guidelines and includes tests where applicable.
 
-* timestamp – Captures time-based usage patterns and seasonality
-* region – Enables region-wise demand analysis and capacity planning
-* service_type – Differentiates demand behavior between Compute and Storage
-* usage_units – Primary demand metric used for forecasting
-* provisioned_capacity – Represents allocated resources for optimization analysis
-* cost_usd – Measures financial impact of resource consumption
-* availability_pct – Indicates service reliability affecting enterprise workloads
-* cloud_spend_index – Reflects economic conditions influencing cloud adoption
-* enterprise_demand_index – Captures market-driven workload demand variations
-* new_service_launch – Represents technical events causing short-term demand spikes
+## License
+
+This project is licensed under the MIT License.
