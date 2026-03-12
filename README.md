@@ -11,8 +11,8 @@ The Azure-based Demand Forecasting and Capacity Optimization System is a sophist
 .
 ├── DemandForecasting&CapacityOptimizationSystem.ipynb
 ├── LICENSE
-├── Milstone-2.ipynb
 ├── Milstone-3.ipynb
+├── Milstone-2.ipynb
 ├── azure_demand_cleaned.csv
 ├── azure_demand_feature_engineered.csv
 └── azure_demand_raw.csv
