@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure Demand Forecast</title>
+</head>
+<body>
+    <h2>Demand Prediction</h2>
+
+    <input id="capacity" placeholder="Capacity"><br><br>
+    <button onclick="predict()">Predict</button>
+
+    <p id="result"></p>
+
+    <script>
+        async function predict() {
+            let response = await fetch("https://your-api.onrender.com/predict", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({
+                    timestamp: "2024-06-15 10:30:00",
+                    region: "US-East",
+                    service_type: "Compute",
+                    provisioned_capacity: parseInt(document.getElementById("capacity").value),
+                    cost_usd: 3000,
+                    availability_pct: 99.9,
+                    cloud_spend_index: 1.1,
+                    enterprise_demand_index: 1.2,
+                    new_service_launch: 0
+                })
+            });
+
+            let data = await response.json();
+            document.getElementById("result").innerText = "Forecast: " + data.forecast;
+        }
+    </script>
+</body>
+</html>
